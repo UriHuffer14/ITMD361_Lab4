@@ -21,7 +21,7 @@
 	  
 	  <label>Age: 
 	    <select name="age_field">
-	      <option selected="Under 18">Under 18</option>
+	      <option value="Under 18">Under 18</option>
 	      <option value="18 - 24">18 - 24</option>
 	      <option value="25 - 34">25 - 34</option>
 	      <option value="35 - 44">35 - 44</option>
@@ -43,8 +43,10 @@
 	    <label><input type="checkbox" name="available_field[]" value="Thursday">Thursday</label><p></p>
 	    <label><input type="checkbox" name="available_field[]" value="Friday">Friday</label><p></p>
 	    <label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label><p></p>
-	  
-	    <label>Any Comments?<p></p><textarea name="comments_field" ></textarea></label>
+		
+	    <label for="comments">Any Comments?</label><p></p>
+		<input type="text" name="comments_field" id="comments">
+	    <!--<label>Any Comments?<textarea name="comments_field" ></textarea></label>-->
 	</fieldset>
 	<input type="submit" value="Send Me">
 	<input type="hidden" name="hidden_field" value="lhuff1">
